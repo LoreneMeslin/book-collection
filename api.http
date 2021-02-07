@@ -1,0 +1,8 @@
+@protocol=http
+@domainname=localhost
+@port={{$dotenv PORT}}
+@path=v1
+@url={{protocol}}://{{domainname}}:{{port}}/{{path}}
+
+### GET /books
+GET {{url}}/books
