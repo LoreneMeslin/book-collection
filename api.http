@@ -6,3 +6,6 @@
 
 ### GET /books
 GET {{url}}/books
+
+### GET /books/:id
+GET {{url}}/books/1
