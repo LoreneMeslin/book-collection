@@ -2,3 +2,4 @@
 %project=book-collection
 
 init 2021-02-07T15:04:15Z Lorène Meslin <lorene.meslin@gmail.com> # création de la table et du domaine posint
+boardgame/insert 2021-02-07T18:27:58Z Lorène Meslin <lorene.meslin@gmail.com> # ajout d'une fonction pour ajouter des lignes dans la table book
