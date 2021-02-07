@@ -36,6 +36,26 @@ class Book {
 
         return new Book(rows[0]);
     }
+
+    async save() {
+        const { rows } = await db.query(`
+            SELECT *
+            FROM new_book(
+                $1, $2, $3, $4, $5, $6, $7
+            );`, [
+            this.title,
+            this.author,
+            this.edition,
+            this.isbn,
+            this.numberPages,
+            this.tag,
+            this.note
+        ]);
+
+        console.log(rows);
+
+        this.id = rows[0].id;
+    }
 }
 
 module.exports = Book;

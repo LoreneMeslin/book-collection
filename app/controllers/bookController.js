@@ -14,6 +14,16 @@ const bookController = {
         } catch (err) {
             res.status(404).json(err.message);
         }
+    },
+
+    newBook: async (req, res) => {
+        const newBookData = req.body;
+
+        const newBook = new Book(newBookData);
+        // il faut await si on veut pouvoir avoir le nouvel id créer par la BDD
+        await newBook.save();
+
+        res.json(newBook);
     }
 }
 

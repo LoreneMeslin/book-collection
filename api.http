@@ -9,3 +9,17 @@ GET {{url}}/books
 
 ### GET /books/:id
 GET {{url}}/books/1
+
+### POST /books
+POST {{url}}/books
+Content-Type: application/json
+
+{
+    "title": "À la Croisée des Mondes: La Tour des Anges",
+    "author": "Philip Pullman",
+    "edition": "Folio Junior",
+    "isbn": "978-2075091244",
+    "numberPages": 448,
+    "tag": "Aventure",
+    "note": 5
+}
