@@ -1,0 +1,4 @@
+%syntax-version=1.0.0
+%project=book-collection
+
+init 2021-02-07T15:04:15Z Lorène Meslin <lorene.meslin@gmail.com> # création de la table et du domaine posint
