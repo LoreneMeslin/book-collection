@@ -10,7 +10,7 @@ CREATE TABLE book (
     title text NOT NULL,
     author text NOT NULL, -- possible futur table
     "edition" text NOT NULL, -- possible futur table
-    isbn text NOT NULL,
+    isbn text NOT NULL UNIQUE,
     number_pages posint NOT NULL,
     tag text NOT NULL, -- possible futur table
     note posint NOT NULL
