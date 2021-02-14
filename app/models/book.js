@@ -38,19 +38,10 @@ class Book {
     }
 
     async save() {
+        console.log(this);
         const { rows } = await db.query(`
             SELECT *
-            FROM new_book(
-                $1, $2, $3, $4, $5, $6, $7
-            );`, [
-            this.title,
-            this.author,
-            this.edition,
-            this.isbn,
-            this.numberPages,
-            this.tag,
-            this.note
-        ]);
+            FROM new_book($1);`, [this]);
 
         console.log(rows);
 

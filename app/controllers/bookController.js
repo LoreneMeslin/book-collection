@@ -18,7 +18,7 @@ const bookController = {
 
     newBook: async (req, res) => {
         const newBookData = req.body;
-
+        console.log(newBookData);
         const newBook = new Book(newBookData);
         // il faut await si on veut pouvoir avoir le nouvel id créer par la BDD
         await newBook.save();
