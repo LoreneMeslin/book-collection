@@ -24,16 +24,10 @@ Content-Type: application/json
     "note": 5
 }
 
-### POST /books
-POST {{url}}/books
+### PATCH /books
+PATCH  {{url}}/books/4
 Content-Type: application/json
 
 {
-    "title": "À la Croisée des Mondes: La Miroir d'ambre",
-    "author": "Philip Pullman",
-    "edition": "Folio Junior",
-    "isbn": "978-2070612444",
-    "numberPages": 518,
-    "tag": "Aventure",
     "note": 5
 }

@@ -9,5 +9,6 @@ router.get('/books', bookController.allBooks);
 router.get('/books/:id', bookController.oneBook);
 
 router.post('/books', validateBody(bookSchema), bookController.newBook);
+router.patch('/books/:id', bookController.updateBook);
 
 module.exports = router;
