@@ -5,3 +5,4 @@ init 2021-02-07T15:04:15Z Lorène Meslin <lorene.meslin@gmail.com> # création d
 book/insert 2021-02-07T18:27:58Z Lorène Meslin <lorene.meslin@gmail.com> # ajout d'une fonction pour ajouter des lignes dans la table book
 note_null 2021-02-14T14:29:36Z Lorène Meslin <lorene.meslin@gmail.com> # retire la contrainte NOT NULL pour la note
 book/insert-json 2021-02-14T14:44:20Z Lorène Meslin <lorene.meslin@gmail.com> # fonction pour ajouter des lignes dans la table book qui utilise le json
+book/update 2021-02-17T19:03:44Z Lorène Meslin <lorene.meslin@gmail.com> # fonction pour mettre à jour une ligne dans la table book
